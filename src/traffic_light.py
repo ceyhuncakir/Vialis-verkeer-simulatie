@@ -99,7 +99,7 @@ class TrafficLight:
         this function return the state of done
 
         Returns:
-            the state done which says that the cycle whithin the traffic_light is done
+            the state done which says that the cycle within the traffic_light is done
 
         """
 

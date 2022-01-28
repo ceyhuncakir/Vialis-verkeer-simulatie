@@ -38,7 +38,11 @@ class Environment:
     def create_agents(self):
 
         """
-        this function creates the agents for the map
+        To create the cars, it will keep looping through the spawn_direction dictionary to look for more cars to add to the self.agent list, each time a car is added to self.agent list, it decreases the amount of the counter from the given direction by 1, this keeps going untill all the counters reach 0.
+
+        For each car it also predetermines the road it will spawn in, and adds the corresponding gates, it will only set the road if it is not a buslane
+
+        If we allow busses to spawn, then add the amount of busses we want to the list, they will be inserted into the list at random indexes, also with a predetermined road it will spawn on, which can only be a buslane
         """
 
         spawn_roads = []

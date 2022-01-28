@@ -4,7 +4,7 @@ class TrafficLightController:
 
         """
 
-        trafficlight controller class initializer to create an traffic light controller whithin a map
+        trafficlight controller class initializer to create an traffic light controller within a map
 
         Parameters:
             configuration (object): an configuration object that holds information
@@ -49,7 +49,7 @@ class TrafficLightController:
     def get_connection_data(self):
 
         """
-        this functions checks all the traffic lights and if there road is occupied so it can make a decision in which traffic light it should activate.
+        this functions checks all the traffic lights and decides which traffic light should be activated first based on the amount of time an agent has been waiting for each traffic light        
         """
 
         for key, value in self.lus_connections.items():
